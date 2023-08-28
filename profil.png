@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assigment-9::Profile</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Survey</h1>
+      <div class="content">
+        <form action="" method="GET">
+          <fieldset>
+            <legend>Your Information</legend>
+            <label for="text">First Name :</label> <input type="text" name="fname" id="fname" placeholder="Enter First Name" />
+            <br />
+            <br />
+            <label for="text">Last Name :</label> <input type="text" name="lname" id="lname" placeholder="Enter Last Name" />
+            <br />
+            <br />
+            <label for="text">Email :</label> <input type="text" name="email" id="email" placeholder="Enter Email Address" />
+            <br />
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Survey Questions</legend>
+            Favorite Sports : <input type="radio" name="sport" />Baseball<input type="radio" name="sport" />Rugby
+            <input type="radio" name="sport" />Snowboarding<br /><br />
+            Your Pets: <input type="checkbox" name="checkbox" id="cat" /><label for="checkbox">cat</label>
+            <input type="checkbox" name="checkbox" id="Dog" /><label for="checkbox">Dog</label>
+            <input type="checkbox" name="checkbox" id="Iguana" /><label for="checkbox">Iguana</label>
+          </fieldset>
+          <br />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

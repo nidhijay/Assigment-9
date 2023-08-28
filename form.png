@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assigment-9:: Form</title>
+    <style>
+      fieldset {
+        border: 10px solid blue;
+        border-radius: 20px;
+        background-color: #e6e6fa;
+        margin: 5px 0px;
+      }
+      legend {
+        border: 1px solid purple;
+        border-radius: 8px;
+        padding: 5px 10px;
+        background-color: purple;
+        color: white;
+        font-weight: bold;
+      }
+      input.btn {
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 5px 10px;
+        background-color: #008b8b;
+        color: white;
+        font-size: 16px;
+      }
+      span.btn {
+        padding: 5px 10px;
+        background-color: #008b8b;
+        color: white;
+        font-size: 16px;
+      }
+      tr,
+      td {
+        padding: 5px;
+      }
+      .p-100 {
+        padding-left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1><b>Enter Your Details For Our Dating Website</b></h1>
+      <div class="content">
+        <form action="" method="GET">
+          <fieldset>
+            <legend>Your Face</legend>
+            <div class="p-100">
+              <label for="file">Upload Your Image :</label> <input type="file" name="file" id="file" /> <br />
+              Image Preview :
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Your Details</legend>
+            <table class="p-100">
+              <tbody>
+                <tr>
+                  <td><label for="text">Name :</label></td>
+                  <td><input type="text" name="fname" id="fname" placeholder="Your Full Name" /></td>
+                </tr>
+                <tr>
+                  <td><label for="gender">Gender : </label></td>
+                  <td>
+                    <input type="radio" name="gender" id="gender" />Woman <input type="radio" name="gender" id="gender" />Man
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="age">Age :</label></td>
+                  <td><input type="number" name="age" id="age" /></td>
+                </tr>
+                <tr>
+                  <td><label for="date">Date of Birth :</label></td>
+                  <td><input type="date" name="date" id="date" /></td>
+                </tr>
+                <tr>
+                  <td><label for="color">Favourite color : </label></td>
+                  <td><input type="color" name="color" id="color" value="#000" /></td>
+                </tr>
+                <tr>
+                  <td><label for="select">Country :</label></td>
+                  <td>
+                    <select name="select" id="select">
+                      <option value="0" selected>Choose a Country</option>
+                      <option value="1">India</option>
+                      <option value="2">USA</option>
+                      <option value="3">Germany</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="range">Salary:</label></td>
+                  <td>
+                    <span class="btn">Poor</span> <input type="range" name="range" id="range" min="0" max="100" />
+                    <span class="btn">Rich</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </fieldset>
+          <fieldset>
+            <legend>Your Contact Information</legend>
+            <table class="p-100">
+              <tbody>
+                <tr>
+                  <td><label for="text">Email :</label></td>
+                  <td><input type="text" name="email" id="email" /></td>
+                </tr>
+                <tr>
+                  <td><label for="text">Phone :</label></td>
+                  <td><input type="text" name="phone" id="phone" /></td>
+                </tr>
+                <tr>
+                  <td><label for="address">Address : </label></td>
+                  <td><textarea name="address" id="address" cols="30" rows="2"></textarea></td>
+                </tr>
+                <tr>
+                  <td>Contact Methods(s) :</td>
+                  <td>
+                    <input type="checkbox" name="checkbox" id="email" />Email
+                    <input type="checkbox" name="checkbox" id="phone" />Phone
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </fieldset>
+          <input type="submit" class="btn" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
